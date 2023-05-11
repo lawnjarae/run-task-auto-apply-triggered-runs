@@ -22,7 +22,7 @@ To get around this behavior, we can use a [Run Task](https://developer.hashicorp
 ## Running this run task
 Python 3.11.3 is the version that this Run Task was developed on.
 
-**IMPORTANT** - For this Run Task to commuicate with Terraform Cloud, the endpoint **must** be publically available.
+**IMPORTANT** - For this Run Task to commuicate with Terraform Cloud, the endpoint **must** be publicly available.
 
 ### From source
 1. Install the requirements with `pip -r requirements.txt`
