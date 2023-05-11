@@ -19,6 +19,9 @@ To get around this behavior, we can use a [Run Task](https://developer.hashicorp
 | HMAC_SECRET | A secret key that may be required by the external service to verify request authenticity. | yes |
 | TFC_API_TOKEN | The generated token used to communicate with Terraform Cloud | yes |
 
+## Configuring the task in Terraform Cloud
+Follow the instructions in the [Run Task](https://developer.hashicorp.com/terraform/cloud-docs/workspaces/settings/run-tasks) docs. When adding the Run Task to the workspace you wish to auto-apply, ensure that the run stage is the "Post-plan". Alternatively, you can add the Run Task to many workspaces at once by writing some simple Terraform and leveraging the [Run Task resource](https://registry.terraform.io/providers/hashicorp/tfe/latest/docs/resources/workspace_run_task).
+
 ## Running this run task
 Python 3.11.3 is the version that this Run Task was developed on.
 
